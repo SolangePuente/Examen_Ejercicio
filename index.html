@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>EJERCICIO DEL EXAMEN CHECKBOX</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+<script>
+  function Verificar()
+  {
+    var Deportes='';
+    if (document.getElementById("checkbox1").checked)
+    {
+      Deportes=Deportes+'Fútbol ';
+    }
+    if (document.getElementById("checkbox2").checked)
+    {
+      Deportes=Deportes+'Básquet ';
+    }
+    if (document.getElementById("checkbox3").checked)
+    {
+      Deportes=Deportes+'Tenis';
+    }
+    alert('Los deportes seleccionados son:'+Deportes);
+  }
+</script>
+
+<form>
+  Seleccione los deportes que practica:<br>
+  <input type="checkbox" id="checkbox1">Fútbol<br>
+  <input type="checkbox" id="checkbox2">Básquet<br>
+  <input type="checkbox" id="checkbox3">Tenis<br>
+  <input type="button" value="Controlar" onClick="Verificar()">
+</form>
+</body>
+</html>
